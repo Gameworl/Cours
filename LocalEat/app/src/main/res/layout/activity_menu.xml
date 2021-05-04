@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/boutonRetour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_rond"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:paddingRight="5dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top" />
+
+    <TextView
+        android:id="@+id/nomUtilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/jean_louis_dupont" />
+
+    <TextView
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profil"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/parametre_compte"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/adresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adresses"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/prefsAlimentaires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prefsAlimentaires"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/producteursFavs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/producteursFavs"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/reservations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reservations"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/promos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/promos"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/params"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/background_list_item"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

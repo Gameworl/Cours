@@ -1,0 +1,127 @@
+/*==========================================*/
+/*       css de la premiere section         */
+/*==========================================*/
+.img-presentation{
+    background-image: url("../Images/img-fond1.jpg");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgProfil{
+    width: 20vw;
+}
+
+.presentation{
+    margin-top: 5vh;
+    background-color: rgba(231, 219, 219, 0.644) !important;
+}
+/*==========================================*/
+/*       css du corps de la page            */
+/*==========================================*/
+.CorpsSection{
+    margin-top: 2vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*==========================================*/
+/*              css des cards               */
+/*==========================================*/
+.card{
+    width: 70vw;
+    background-color: white;
+}
+
+.card-body{
+    width: 100%;
+}
+.card h4{
+    text-align: center;
+}
+.card p{
+    text-align: justify;
+}
+/*==========================================*/
+/*    css des cards avec double section     */
+/*==========================================*/
+.DoubleSection{
+    display: flex;
+    align-items: center;
+}
+.sectionGauche{
+    width: 100%;
+    border-right: solid 1px grey;
+}
+.sectionDroite{
+    width: 100%;
+}
+/*==========================================*/
+/*      css des cards Compentences          */
+/*==========================================*/
+.competenceCard{
+    align-items: center;
+}
+.competenceCard h6{
+    width: 10vw;
+}
+.info{
+    margin-right: 1vw;
+}
+
+.infoLeft{
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.comptence{
+display: flex;
+}
+.bulletPoint{
+    margin-left: 2vw;
+}
+/*==========================================*/
+/*      css de la ligne séparatrice         */
+/*==========================================*/
+.hrShort{
+    width: 30%;
+    margin: 0 !important;
+    text-align: start;
+    margin-bottom: 2vh !important;
+}
+
+/*==========================================*/
+/*                css du footer             */
+/*==========================================*/
+.page-footer{
+    position: absolute;
+    bottom: -5vh;
+    text-align: center;
+    width: 100%;
+}
+.footer-copyright{
+    height: 100%;
+}
+/*==========================================================*/
+/*   css quand la taille de la fenetre est moins de 1160px  */
+/*==========================================================*/
+@media (max-width: 1160px){
+    .DoubleSection{
+        flex-direction: column;
+    }
+    .sectionGauche{
+        border-right:  0px ;
+    }
+    .infoLeft{
+        margin-right: 1vw;
+        margin-left: 0vw;
+    }
+    .competenceCard h6{
+        width: fit-content;
+    }
+}

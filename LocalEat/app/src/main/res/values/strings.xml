@@ -1,0 +1,88 @@
+<resources>
+    <!-- Général -->
+    <string name="app_name">LocalEat</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibmF0YW5jaGFycGVudGllciIsImEiOiJja2gyNzFrN3YwMjAyMnRsc3l0N25nc2k5In0.xm6HPSIeqGkBZNPYNFSIRQ</string>
+
+    <string name="InscriptionTexte">Nouveau sur LocalEat ? Inscrivez-Vous !</string>
+    <string name="dateReservation">Date de réservation</string>
+    <string name="produit">Produit</string>
+    <string name="producteur">Producteur</string>
+
+    <!-- Réservations -->
+    <string name="listeReservationsTitre">Mes réservations</string>
+    <string name="listeReservationsSousTitre">Retrouvez vos réservations ici</string>
+
+    <!-- Menu -->
+    <string name="profil">Afficher le profil</string>
+    <string name="adresses">Adresses</string>
+    <string name="prefsAlimentaires">Préférences alimentaires</string>
+    <string name="producteursFavs">Producteurs favoris</string>
+    <string name="reservations">Réservations</string>
+    <string name="promos">Offres promotionnelles</string>
+    <string name="params">Paramètres</string>
+
+    <string name="search_hint">Rechercher un produit</string>
+    <string name="votre_adresse_actuel">Votre adresse (ex: 7 rue du stade , 17000, France)</string>
+    <string name="adresse_de_mon_profil">Utiliser l\'adresse de mon profil</string>
+    <string name="boutonsend_description">boutonSend</string>
+    <string name="seekBar_base_texte">Distance entre vous et les producteurs</string>
+    <string name="seConnecter">Se Connecter</string>
+    <string name="creerUnCompte">Créer un compte</string>
+    <string name="poursuivreSansConnexion">Poursuivre sans connexion</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="email">Email</string>
+    <string name="motDePasse">Mot de passe</string>
+    <string name="confirmer_motDePasse">Confirmer le mot de passe</string>
+    <string name="entrer">Entrer</string>
+    <string name="suivant">Suivant</string>
+    <string name="localeat">LocalEat</string>
+    <string name="petitTexte">Les producteurs locaux à portée de clic !</string>
+    <string name="prefTexte">Afin d’adapter notre contenu à vos préférences, veuillez compléter votre profil.</string>
+    <string name="prefTexte2">Les producteurs sont amenés à proposer des offres. Sélectionnez les catégories qui peuvent vous intéresser :</string>
+    <string name="adressTexte">Notre application vous propose d’établir un rayon de recherche. Nous vous proposons d’entrer une adresse par défaut.</string>
+    <string name="regimeAlimentaire">Quel est votre régime alimentaire ?</string>
+    <string name="checkboxViande">Viandes</string>
+    <string name="checkboxFruit">Fruits</string>
+    <string name="checkboxLegume">Legumes</string>
+    <string name="checkboxProduitsDeLaMer">Produits de la mer</string>
+    <string name="checkboxLaitage">Laitages</string>
+    <string name="checkboxCereale">Céréales</string>
+    <string name="labelAdresse">Adresse</string>
+    <string name="labelAdresseComplementaire">Complément dadresse</string>
+    <string name="labelVille">Ville</string>
+    <string name="labelCodePostal">Code postal</string>
+    <string name="valider">Valider</string>
+    <string name="champ_vide">Champ vide !</string>
+    <string name="creer_compte_ou_adresse">Veuillez créer un compte ou entrer une adresse pour utiliser cette fonctionalitée</string>
+    <string name="creer_compte">Veuillez créer un compte pour utiliser cette fonctionalitée</string>
+    <string name="champ_invalide">Champs invalide!</string>
+    <string name="motDePasse_trop_court">Mots de passe trop court!</string>
+    <string name="motDePasse_pas_identiques">Les mots de passe ne sont pas identiques!</string>
+    <string name="creation_du_compte">Creation de votre compte</string>
+    <string name="encours_confirmation">En cours de confirmation</string>
+    <string name="reservation_valide">Cette commande a bien été prise en compte par le producteur</string>
+    <string name="reservation_refuse">Cette commande a été refusée par le producteur</string>
+    <string name="parametre_compte">Paramètres du compte</string>
+    <string name="jean_louis_dupont">Jean-Louis Dupont</string>
+    <string name="adresse">Adresse :</string>
+    <string name="horaires">Horaires</string>
+    <string name="description">Description</string>
+    <string name="voir_sur_la_carte">Voir sur la Carte</string>
+    <string name="profilProducteur">Profil</string>
+    <string name="produitsProducteur">Produits</string>
+    <string name="nos_produits">Nos Produits</string>
+    <string name="title_activity_produits_adapter">ProduitsAdapter</string>
+    <string name="exploitation">Exploitation</string>
+    <string name="numero">Numéro</string>
+    <string name="adresse_producteur">Adresse</string>
+    <string name="heure">Heure</string>
+    <!-- fragment -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

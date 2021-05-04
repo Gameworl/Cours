@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>formContact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="contactForm">
+    <ion-list>
+        <ion-item>
+            <ion-label position="stacked">Nom</ion-label>
+            <ion-label *ngIf="!contactForm.controls.nom.valid"
+            class="validator-error" position="stacked" color="danger">Merci d'ajouter un nom</ion-label>
+            <ion-input formControlName="nom" type="text">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Prenom</ion-label>
+          <ion-label *ngIf="!contactForm.controls.prenom.valid"
+            class="validator-error" position="stacked" color="danger">Merci d'ajouter un prenom</ion-label>
+          <ion-input formControlName="prenom" type="text">
+          </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Date naissance</ion-label>
+        <ion-label *ngIf="!contactForm.controls.naissance.valid"
+        class="validator-error" position="stacked" color="danger">Date de naissance format dd/MM/yyyy</ion-label>
+        <ion-input formControlName="naissance" type="text">
+        </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-label *ngIf="!contactForm.controls.email.valid"
+        class="validator-error" position="stacked" color="danger">merci d'ajouter un email valide</ion-label>
+      <ion-input formControlName="email" type="text">
+      </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">N° téléphone</ion-label>
+    <ion-label *ngIf="!contactForm.controls.numero.valid"
+    class="validator-error" position="stacked" color="danger">ajouter un numero de téléphone</ion-label>
+    <ion-input formControlName="numero" type="text">
+    </ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Description</ion-label>
+  <ion-label *ngIf="!contactForm.controls.description.valid"
+  class="validator-error" position="stacked" color="danger">ajouter une description</ion-label>
+  <ion-input formControlName="description" type="text">
+  </ion-input>
+</ion-item>
+
+    </ion-list>
+
+    <ion-row class="signin" *ngIf="!existant">
+        <ion-col>
+            <ion-button  *ngIf="contactForm.valid" (click)="onCreate()" color="primary" shape="full" expand="block" routerLink="/home">Ajouter</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row class="signin" *ngIf="existant">
+      <ion-col>
+          <ion-button  *ngIf="contactForm.valid" (click)="onEdit()" color="primary" shape="full" expand="block" routerLink="/home">Modifier</ion-button>
+      </ion-col>
+  </ion-row>
+</form>
+</ion-content>

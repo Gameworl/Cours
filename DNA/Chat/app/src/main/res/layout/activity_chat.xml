@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/center"
+       />
+
+
+    <Space
+        android:id="@+id/center"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_centerInParent="true" />
+    <ListView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/sendButton"
+        android:layout_below="@+id/mapview"
+        >
+
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/sendButton"
+        android:layout_alignBottom="@+id/sendButton"
+        android:layout_alignParentLeft="true"
+        android:autofillHints="text"
+        android:layout_toLeftOf="@+id/sendButton"
+        />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/envoyer" />
+
+</RelativeLayout>

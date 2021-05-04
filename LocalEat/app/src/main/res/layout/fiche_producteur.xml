@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FicheProducteur">
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_rond"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:paddingRight="5dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/exploitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnProfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/profilProducteur" />
+
+        <Button
+            android:id="@+id/btnProduits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/produitsProducteur" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fragment" />
+
+</LinearLayout>

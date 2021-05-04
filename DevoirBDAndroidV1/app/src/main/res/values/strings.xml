@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Devoir-BDAndroid-V1</string>
+    <string name="add_csevent">ADD CSEVENT</string>
+    <string name="list_csevent">LIST CSEVENT</string>
+    <string name="update_csevent">UPDATE CSEVENT</string>
+    <string name="delete_csevent">DELETE CSEVENT</string>
+    <string name="delete_csevents">DELETE CSEVENTS</string>
+</resources>

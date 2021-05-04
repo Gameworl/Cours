@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionPrefsAlimentairesActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/premierTexte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prefTexte"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/premierTexte"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/regimeAlimentaire"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerRegimeAlimentaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prefTexte2"
+            android:layout_marginBottom="5dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_viande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxViande"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"
+            android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_produit_mer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxProduitsDeLaMer"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"
+            android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_legume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxLegume"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"
+            android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxFruit"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"
+            android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_laitage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxLaitage"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"
+            android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_cereale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkboxCereale"
+            android:textSize="18sp"
+            android:onClick="checkboxSelectionner"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/suivant"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/suivantPref"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

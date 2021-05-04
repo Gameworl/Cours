@@ -1,0 +1,74 @@
+html{
+    height: 100%;
+}
+/*==============================================*/
+/*  css de la section  qui contient nos projet  */
+/*==============================================*/
+section{
+    display: flex !important;
+    height: 100%;
+    display: -webkit-flex; ;
+    
+}
+/*==========================================*/
+/*  css de la partie gauche de la section   */
+/*==========================================*/
+.ProjetLeft{
+    background-image: url(../Images/img-projet.jpeg);
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    -webkit-flex: 1; 
+    flex: 1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*==========================================*/
+/*  css de la partie droite de la section   */
+/*==========================================*/
+.ProjetRight{
+    background-image: url(../Images/img-projet1.jpeg);
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    -webkit-flex: 1; 
+    flex: 1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*==================================================*/
+/*  css quand on survole les parties droite/gauche  */
+/*==================================================*/
+.ProjetLeft:hover,.ProjetRight:hover{
+    filter: grayscale(1); 
+    -webkit-filter: grayscale(1);
+}
+/*==================================================*/
+/*               css des li de la page              */
+/*==================================================*/
+li{
+    text-align: left;
+}
+/*==========================================================*/
+/*   css quand la taille de la fenetre est moins de 1160px  */
+/*==========================================================*/
+@media (max-width: 1160px){
+    /*Notre section place les divs quelle contient en format column*/
+    section{
+        flex-direction: column;
+    }
+    /*Suppression margin bottom*/
+    .ProjetLeft{
+        margin-bottom: 0px !important;
+    }
+    /*changement police*/
+    p{
+        font-size: small !important;
+    }
+    li{
+        font-size: small !important;
+    }
+    h2{
+        font-size: medium !important;
+    }
+}

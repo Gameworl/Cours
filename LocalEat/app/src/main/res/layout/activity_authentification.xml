@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonRetour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_rond"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:paddingRight="5dp"
+        android:layout_margin="5dp"
+        android:gravity="top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/image">
+
+        <TextView
+            android:id="@+id/textLocaleat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/localeat"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@color/dark_green"
+            />
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_below="@+id/textLocaleat"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/email"
+            android:layout_below="@+id/labelEmail"/>
+
+        <TextView
+            android:id="@+id/labelMotDePasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motDePasse"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/motDePasse"
+            android:inputType="textPassword"
+            android:layout_below="@+id/labelMotDePasse"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/motDePasse">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/entrer"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/connexion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/imgbas"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom" />
+
+
+</RelativeLayout>

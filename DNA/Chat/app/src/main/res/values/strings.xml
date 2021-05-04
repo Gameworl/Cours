@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="connexion">Connexion</string>
+    <string name="Nom">Nom</string>
+    <string name="valider">Valider</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibmF0YW5jaGFycGVudGllciIsImEiOiJja2gyNzFrN3YwMjAyMnRsc3l0N25nc2k5In0.xm6HPSIeqGkBZNPYNFSIRQ</string>
+
+</resources>

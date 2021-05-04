@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TDDNA</string>
+    <string name="exit">exit</string>
+    <string name="add">add</string>
+    <string name="name">name</string>
+    <string name="number">number</string>
+    <string name="nameHint">nameHint</string>
+    <string name="suppresionText">Voulez-vous supprimer ce contact ?</string>
+    <string name="exitText">Voulez-vous quitter l\'application ?</string>
+    <string name="imgContact">ImageDeContact</string>
+    <string name="close">close</string>
+    <string name="call">call</string>
+    <string name="contactV2">contactV2</string>
+</resources>

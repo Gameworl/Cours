@@ -1,0 +1,3 @@
+- input année naissance
+- label affiche msg
+- bouton calcul votre age

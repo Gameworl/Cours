@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      My Contacts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-button  expand="block" routerLink="/form-contact">Add contact</ion-button>
+    <div *ngFor="let contact of contactService.listContact">
+      <app-card-contact [data]="contact" (edit)="catchEdition($event)" (delete)="catchDelete($event)"></app-card-contact>
+    </div>
+</ion-content>

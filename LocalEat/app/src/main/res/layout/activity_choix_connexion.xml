@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/image">
+
+        <TextView
+            android:id="@+id/textLocaleat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/localeat"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@color/dark_green"
+            android:layout_marginBottom="40dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/firstLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/textLocaleat">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/seConnecter"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/buttonConnexion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_person_24"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_below="@+id/firstLL"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/creerUnCompte"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/buttonCreerCompte"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_person_add_alt_1_24"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_below="@+id/secondLL"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/poursuivreSansConnexion"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/buttonPoursuivreSansConnexion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                android:background="@drawable/background_button"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/imgbas"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom" />
+
+
+
+</RelativeLayout>

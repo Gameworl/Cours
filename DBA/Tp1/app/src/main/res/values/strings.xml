@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BDATD1</string>
+    <string name="nouveau_contact">Nouveau contact</string>
+    <string name="user_name_txt">User_name_txt</string>
+    <string name="user_phone_txt">User_phone_txt</string>
+    <string name="user_email_txt">User_email_txt</string>
+    <string name="btn_update">btn_update</string>
+    <string name="btn_delete">btn_delete</string>
+    <string name="info_contact">Info contact</string>
+    <string name="numero">n°</string>
+    <string name="email">Email</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="mettre_jour">Mettre à jour</string>
+</resources>
